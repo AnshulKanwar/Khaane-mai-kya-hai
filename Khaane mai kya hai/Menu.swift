@@ -12,49 +12,49 @@ enum Day: String, CaseIterable {
 }
 
 struct Meal {
-    let breakfast: [String]
-    let lunch: [String]
-    let dinner: [String]
+    let breakfast: [Dish]
+    let lunch: [Dish]
+    let dinner: [Dish]
 }
 
 let menu: [Day: Meal] = [
     .Sunday: Meal(
-        breakfast: ["Cutlets", "Idli Sambhar"],
-        lunch: ["Chutney", "Choley", "Bhature", "Sweet Lassi"],
-        dinner: ["Dal Tadka", "Sarson ka Saag", "Makki ki Roti", "Moong Dal Halwa"]
+        breakfast: [.cutlets, .idliSambhar],
+        lunch: [.choley, .bhature, .sweetLassi],
+        dinner: [.dalTadka, .sarsonDaSaag, .makkiDiRoti, .moongDalHalwa]
     ),
     .Monday: Meal(
-        breakfast: ["Cornflakes", "Paneer Parantha"],
-        lunch: ["Jeera Aloo", "Dal Dhaba"],
-        dinner: ["Dal Makhani", "Corn Palak", "Jalebi"]
+        breakfast: [.cornflakes, .paneerParantha],
+        lunch: [.jeeraAloo, .dalDhaba],
+        dinner: [.dalMakhani, .cornPalak, .jalebi]
     ),
     .Tuesday: Meal(
-        breakfast: ["Poha", "Aloo Pyaaz Parantha"],
-        lunch: ["Wada", "Sambhar", "Lemon Rice", "Uttapam", "Tomato Chutney"],
-        dinner: ["Pindi Channa", "Mix Veg", "Gulab Jamun", "Tomato Soup"]
+        breakfast: [.poha, .alooPyaazParantha],
+        lunch: [.wada, .sambhar, .lemonRice, .uttapam, .tomatoChutney],
+        dinner: [.pindiChanna, .mixVeg, .gulabJamun, .tomatoSoup]
     ),
     .Wednesday: Meal(
-        breakfast: ["Bread Pakoda/Veg Sandwich", "Mix Parantha"],
-        lunch: ["Kadai Paneer", "Moong Dal"],
-        dinner: ["Dal Fry", "Aloo Methi", "Besan Barfi/Boondi Ladoo"]
+        breakfast: [.breadPakoda + .vegSandwich, .mixParantha],
+        lunch: [.kadaiPaneer, .moongDal],
+        dinner: [.dalFry, .alooMethi, .besanBarfi + .boondiLadoo]
     ),
     .Thursday: Meal(
-        breakfast:["Macroni/Vermicilli Upma", "Dal Parantha"],
-        lunch: ["Kadai Soya", "Rajma", "Peas Pulao"],
-        dinner: ["Lobia", "Aloo Gajar Matar", "Peas Pulao", "Shahi Tukda"]
+        breakfast:[.macroni + .vermicilliUpma, .dalParantha],
+        lunch: [.kadaiSoya, .rajma, .peasPulao],
+        dinner: [.lobia, .alooGajarMatar, .peasPulao, .shahiTukda]
     ),
     .Friday: Meal(
-        breakfast: ["Sweet Corn", "Plain Parantha", "Aloo Bhaji"],
-        lunch: ["Pav Bhaji", "Veg Biryani"],
-        dinner: ["Dal Arhar Tadka", "Paneer Makhani/Palak Paneer", "Veg Pulao", "Suji Halwa"]
+        breakfast: [.sweetCorn, .plainParantha, .alooBhaji],
+        lunch: [.pavBhaji, .vegBiryani],
+        dinner: [.dalArharTadka, .paneerMakhani + .palakPaneer, .sujiHalwa]
     ),
     .Saturday: Meal(
-        breakfast: ["Dalia", "Aloo Gobi Parantha"],
-        lunch: ["Matar Soya Keema", "Kadhai Pakoda"],
-        dinner: ["Dal Makhani", "Pasta/Manchurian", "Fruit Cake"]
+        breakfast: [.dalia, .alooGobiParantha],
+        lunch: [.matarSoyaKeema, .kadhiPakoda],
+        dinner: [.dalMakhani, .pasta + .manchurain, .fruitCake]
     ),
 ]
 
-func getMenu(on day: Day) -> Meal? {
-    menu[day]
+func getMenu(on day: Day) -> Meal {
+    menu[day]!
 }

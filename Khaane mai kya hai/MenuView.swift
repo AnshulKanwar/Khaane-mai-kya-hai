@@ -10,21 +10,22 @@ import SwiftUI
 struct MenuView: View {
     let weekday: Day
     
+    // TODO: Optimize
     var body: some View {
         List {
             Section("Breakfast") {
-                ForEach(getMenu(on: weekday)!.breakfast, id: \.self) { meal in
-                    Text(meal)
+                ForEach(getMenu(on: weekday).breakfast, id: \.name) { dish in
+                    DishView(dish: dish)
                 }
             }
             Section("Lunch") {
-                ForEach(getMenu(on: weekday)!.lunch, id: \.self) { meal in
-                    Text(meal)
+                ForEach(getMenu(on: weekday).lunch, id: \.name) { dish in
+                    DishView(dish: dish)
                 }
             }
             Section("Dinner") {
-                ForEach(getMenu(on: weekday)!.dinner, id: \.self) { meal in
-                    Text(meal)
+                ForEach(getMenu(on: weekday).dinner, id: \.name) { dish in
+                    DishView(dish: dish)
                 }
             }
         }
