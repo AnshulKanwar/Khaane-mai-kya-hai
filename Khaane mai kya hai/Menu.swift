@@ -41,7 +41,7 @@ let menu: [Day: Meal] = [
     .Thursday: Meal(
         breakfast:["Macroni/Vermicilli Upma", "Dal Parantha"],
         lunch: ["Kadai Soya", "Rajma", "Peas Pulao"],
-        dinner: ["Lobai", "Aloo Gajar Matar", "Peas Pulao", "Sahi Tukda"]
+        dinner: ["Lobia", "Aloo Gajar Matar", "Peas Pulao", "Shahi Tukda"]
     ),
     .Friday: Meal(
         breakfast: ["Sweet Corn", "Plain Parantha", "Aloo Bhaji"],
