@@ -13,6 +13,23 @@ struct MenuView: View {
     // TODO: Optimize
     var body: some View {
         List {
+            Section ("Legend") {
+                HStack {
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(.pink)
+                        .overlay(Text("Desert").foregroundColor(.white))
+                    
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(.yellow)
+                        .overlay(Text("Special"))
+                    
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(.mint)
+                        .overlay(Text("Beverage").foregroundColor(.white))
+                }
+                .frame(minHeight: 30)
+                .padding(.vertical)
+            }
             Section("Breakfast") {
                 ForEach(getMenu(on: weekday).breakfast, id: \.name) { dish in
                     DishView(dish: dish)
