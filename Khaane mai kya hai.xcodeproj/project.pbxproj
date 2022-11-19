@@ -13,7 +13,8 @@
 		F88A117F2928C0930031ABE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88A117E2928C0930031ABE7 /* Preview Assets.xcassets */; };
 		F88A11862928C0C30031ABE7 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88A11852928C0C30031ABE7 /* Menu.swift */; };
 		F88A11882928D8D20031ABE7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88A11872928D8D20031ABE7 /* MenuView.swift */; };
-		F88A118C2928DB160031ABE7 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = F88A118B2928DB160031ABE7 /* screenshot.png */; };
+		F88A11A82928EB6B0031ABE7 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = F88A11A72928EB6B0031ABE7 /* screenshot.png */; };
+		F88A11AA2928EB7A0031ABE7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F88A11A92928EB7A0031ABE7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +25,8 @@
 		F88A117E2928C0930031ABE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F88A11852928C0C30031ABE7 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		F88A11872928D8D20031ABE7 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		F88A118B2928DB160031ABE7 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		F88A11A72928EB6B0031ABE7 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		F88A11A92928EB7A0031ABE7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +43,8 @@
 		F88A116B2928C0920031ABE7 = {
 			isa = PBXGroup;
 			children = (
-				F88A118B2928DB160031ABE7 /* screenshot.png */,
+				F88A11A72928EB6B0031ABE7 /* screenshot.png */,
+				F88A11A92928EB7A0031ABE7 /* README.md */,
 				F88A11762928C0920031ABE7 /* Khaane mai kya hai */,
 				F88A11752928C0920031ABE7 /* Products */,
 			);
@@ -135,7 +138,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F88A117F2928C0930031ABE7 /* Preview Assets.xcassets in Resources */,
-				F88A118C2928DB160031ABE7 /* screenshot.png in Resources */,
+				F88A11A82928EB6B0031ABE7 /* screenshot.png in Resources */,
+				F88A11AA2928EB7A0031ABE7 /* README.md in Resources */,
 				F88A117C2928C0930031ABE7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
