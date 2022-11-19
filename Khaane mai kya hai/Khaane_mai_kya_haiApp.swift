@@ -9,10 +9,17 @@ import SwiftUI
 
 @main
 struct Khaane_mai_kya_haiApp: App {
+    @State private var presentedDay: [Day] = []
+    
+    let weekday = Day(rawValue: DateFormatter().weekdaySymbols[ Calendar.current.component(.weekday, from: Date()) - 1])!
+    
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
+            NavigationStack(path: $presentedDay) {
+                ContentView(presentedDay: $presentedDay)
+            }
+            .onAppear {
+                presentedDay = [weekday]
             }
         }
     }
