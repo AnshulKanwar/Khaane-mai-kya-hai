@@ -11,7 +11,9 @@ import SwiftUI
 struct Khaane_mai_kya_haiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
         }
     }
 }

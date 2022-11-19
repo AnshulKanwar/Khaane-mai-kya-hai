@@ -8,19 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    let weekday = Day(rawValue: DateFormatter().weekdaySymbols[ Calendar.current.component(.weekday, from: Date()) - 1])!
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        MenuView(weekday: weekday)
+            .navigationTitle(weekday.rawValue)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView {
+            ContentView()
+        }
     }
 }
