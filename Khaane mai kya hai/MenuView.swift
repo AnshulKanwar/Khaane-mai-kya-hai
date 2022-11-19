@@ -15,19 +15,27 @@ struct MenuView: View {
         List {
             Section ("Legend") {
                 HStack {
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(.pink)
-                        .overlay(Text("Desert").foregroundColor(.white))
-                    
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(.yellow)
-                        .overlay(Text("Special").foregroundColor(.black))
-                    
-                    RoundedRectangle(cornerRadius: 6)
-                        .fill(.mint)
-                        .overlay(Text("Beverage").foregroundColor(.white))
+                    HStack {
+                        Circle()
+                            .fill(.pink)
+                            .frame(width: 20)
+                        Text("Desert")
+                    }
+                    Spacer()
+                    HStack {
+                        Circle()
+                            .fill(.yellow)
+                            .frame(width: 20)
+                        Text("Special")
+                    }
+                    Spacer()
+                    HStack {
+                        Circle()
+                            .fill(.mint)
+                            .frame(width: 20)
+                        Text("Beverages")
+                    }
                 }
-                .frame(minHeight: 30)
                 .padding(.vertical)
             }
             Section("Breakfast") {
