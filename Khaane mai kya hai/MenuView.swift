@@ -21,7 +21,7 @@ struct MenuView: View {
                     
                     RoundedRectangle(cornerRadius: 6)
                         .fill(.yellow)
-                        .overlay(Text("Special"))
+                        .overlay(Text("Special").foregroundColor(.black))
                     
                     RoundedRectangle(cornerRadius: 6)
                         .fill(.mint)
